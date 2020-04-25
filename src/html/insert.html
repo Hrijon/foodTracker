@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- meta tags -->
+        <meta name="author" content="Rijan Chapagain">
+        <meta name="keywords" content="Rijan, Assignment">
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+        <meta content="utf-8" http-equiv="encoding" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">        
+    
+        <!--build:css-->
+        <!-- Custom CSS -->
+        <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"/> -->
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: whitesmoke;
+                font-size: 22px;
+                line-height: 50px;
+                text-align: center;
+            }
+
+            input, .selectInterest{
+                font-size: 20px;
+            }
+
+            /* Buttons */
+            .submit {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+
+            .reset {
+                background-color: #008CBA; /* blue */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+
+            .back{
+                text-align: left;
+                background-color: rgb(186, 121, 0); /* blue */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 50%;
+            }
+
+            #insert{
+                text-align: left;
+                margin-left: 700px;
+            }
+            
+            /* Thick red border */
+            hr.new4 {
+                border: 1px solid red;
+            }
+            /* footer */
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: red;
+                color: white;
+                text-align: center;
+            }
+        </style>
+        <!-- endbuild -->
+        <title>Insert Item</title>
+    </head>
+
+    <body>
+        <h1>Welcome to insert</h1>
+        <a href="/start"> <input type="button" class="back" name="back" value="&laquo; Back to home"> </a> 
+        <hr class="new4"> 
+        <form id="insert" action="/import" method="POST">
+           <div class="form-item">
+            Item Name: <input type="text" name="name"  style = "text-transform:capitalize;" required><br>
+            Your Name: <input type="text" name="name"  style = "text-transform:capitalize;" required><br>
+            Consume Date: <input type="date" name="date" required><br>
+            Interest in this item: 
+            <select class="selectInterest" name="selectInterest">
+                <optgroup label="Express Intrest">
+                    <option name="op1" value="Excited">Excited</option>
+                    <option name="op2" value="Great">Great</option>
+                    <option name="op3" value="Good">Good</option>
+                    <option name="op4" value="Not Bad">Not Bad</option>
+                    <option name="op5" value="Worse">Worse</option>
+                </optgroup>
+            </select>
+            <br/><br/>
+            <input type="submit" class="submit" name="submit" value="Submit"> 
+            <input type="reset" class="reset" name="reset" value="Reset">      
+            </div>
+        </form>
+    </body>
+    <div class="footer">
+        <p>copyright act: &copy; 2020 Rijan Chapagain</p>
+    </div>
+</html>
